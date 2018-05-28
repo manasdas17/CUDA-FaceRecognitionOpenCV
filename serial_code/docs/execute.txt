@@ -1,0 +1,11 @@
+compilation:
+g++ main.cpp io.cpp calculations.cpp -Wall -Wextra -Iusr/local/include/opencv2 -lopencv_core -lopencv_imgcodecs
+
+executing program (where the components can explain the training data with 0.99 accuracy)
+./a.out "./input/training.txt" "./input/test.txt" 0.99
+
+executing program (where we use 12 principal components)
+./a.out "./input/training.txt" "./input/test.txt" 12
+
+The input files can be given by the relative path to the bianry or with full path.
+The file paths in the input files have to also be full or relative to the binary file.

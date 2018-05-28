@@ -1,0 +1,10 @@
+./data/1.pgm	1
+./data/2.pgm	1
+./data/3.pgm	1
+./data/4.pgm	1
+./data/5.pgm	1
+./data/6.pgm	1
+./data/7.pgm	1
+./data/8.pgm	1
+./data/9.pgm	1
+./data/10.pgm	1

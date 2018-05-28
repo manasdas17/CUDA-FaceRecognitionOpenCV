@@ -1,0 +1,5 @@
+./data/10.pgm
+./data/120.pgm
+./data/20.pgm
+./data/40.pgm
+./data/60.pgm

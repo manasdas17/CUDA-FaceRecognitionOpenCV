@@ -1,0 +1,10 @@
+./data/132.pgm
+./data/388.pgm
+./data/293.pgm
+./data/387.pgm
+./data/298.pgm
+./data/61.pgm
+./data/80.pgm
+./data/286.pgm
+./data/306.pgm
+./data/282.pgm

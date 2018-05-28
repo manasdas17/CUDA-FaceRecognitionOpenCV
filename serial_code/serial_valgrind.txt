@@ -1,0 +1,2 @@
+Usage: <executable> <path to training data file> <path to recognition task file> <variance threshold (if value is less than 1) or number of principal components (otherwise)>
+Usage: <executable> <path to training data file> <path to recognition task file> <variance threshold (if value is less than 1) or number of principal components (otherwise)>

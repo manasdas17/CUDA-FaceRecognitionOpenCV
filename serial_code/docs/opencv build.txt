@@ -1,0 +1,51 @@
+tested on fresh ubuntu 16.04 install (virtual machine)
+
+--------------------------
+
+building: (https://docs.opencv.org/3.4.1/d7/d9f/tutorial_linux_install.html)
+
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo apt-get install build-essential
+sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+
+cd ~/
+git clone https://github.com/opencv/opencv.git
+
+cd ~/opencv
+mkdir build
+cd build
+
+cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..
+
+nproc
+make -j4 # number is the output of nproc
+
+sudo make install
+
+--------------------------
+
+configure lib paths
+
+sudo find / -name "libopencv_core.so.3.4" # find the output which is similar to /usr/local/lib/libopencv_core.so.3.4
+
+sudo gedit /etc/ld.so.conf.d/opencv_conf
+
+sudo ldconfig -v
+
+--------------------------
+
+testing:
+
+cd into opencv folder
+git clone https://github.com/opencv/opencv_extra.git
+copy testdata folder into build/bin/
+./opencv_test_core
+
+--------------------------
+build exe
+
+g++ -I/usr/local/include/opencv2 -L/usr/local/lib/ main.cpp -o executable -lopencv_core -Wall
+
+./executable

@@ -1,0 +1,6 @@
+Match: 394	 Non-Match: 6	 Accuracy 98.5%
+Timing Output ---------------------
+Time to load Image: 	0.128182
+Time for training: 	1.40857
+Time for Classification: 	0.13818
+Total Time: 	1.67494
